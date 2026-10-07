@@ -1,0 +1,47 @@
+{
+  "purpose": "Integration soak only: 5m close replay does not simulate intrabar execution",
+  "results": {
+    "trend": {
+      "ticks": 2250,
+      "callback_errors": 0,
+      "closed_execution_records": 6,
+      "end_positions": 0
+    },
+    "breakout": {
+      "ticks": 2250,
+      "callback_errors": 0,
+      "closed_execution_records": 5,
+      "end_positions": 0
+    },
+    "opening_range": {
+      "ticks": 2250,
+      "callback_errors": 0,
+      "closed_execution_records": 0,
+      "end_positions": 0
+    },
+    "pullback": {
+      "ticks": 2250,
+      "callback_errors": 0,
+      "closed_execution_records": 0,
+      "end_positions": 0
+    },
+    "range_reversion": {
+      "ticks": 2250,
+      "callback_errors": 0,
+      "closed_execution_records": 0,
+      "end_positions": 0
+    },
+    "adaptive_alpha": {
+      "ticks": 2250,
+      "callback_errors": 0,
+      "closed_execution_records": 12,
+      "end_positions": 0
+    },
+    "observe": {
+      "ticks": 2250,
+      "callback_errors": 0,
+      "closed_execution_records": 0,
+      "end_positions": 0
+    }
+  }
+}

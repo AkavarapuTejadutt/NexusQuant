@@ -1,0 +1,582 @@
+{
+  "status": "evaluated",
+  "common_sessions": 83,
+  "validation_start": "2026-08-17 00:00:00",
+  "test_start": "2026-09-09 00:00:00",
+  "method": "First 60% warmup, next 20% candidate selection, final 20% untouched evaluation; independent symbol accounts",
+  "candidates": {
+    "trend": {
+      "IDEA": {
+        "validation": {
+          "net_pnl": 1098.4081015414558,
+          "return_pct": 0.10984081015414926,
+          "max_drawdown_pct": 0.4725194518830766,
+          "trades": 17,
+          "win_rate_pct": 52.94117647058824,
+          "profit_factor": 1.1117895620814258,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "RELIANCE": {
+        "validation": {
+          "net_pnl": -817.1919213803485,
+          "return_pct": -0.08171919213803003,
+          "max_drawdown_pct": 0.20435246843627008,
+          "trades": 7,
+          "win_rate_pct": 42.857142857142854,
+          "profit_factor": 0.6266049992506941,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "SBIN": {
+        "validation": {
+          "net_pnl": -2771.5227121732896,
+          "return_pct": -0.2771522712173291,
+          "max_drawdown_pct": 0.5527024808614227,
+          "trades": 11,
+          "win_rate_pct": 36.36363636363637,
+          "profit_factor": 0.5038248045090239,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "SUNPHARMA": {
+        "validation": {
+          "net_pnl": -3743.609082985553,
+          "return_pct": -0.3743609082985544,
+          "max_drawdown_pct": 0.5787554843156351,
+          "trades": 10,
+          "win_rate_pct": 40.0,
+          "profit_factor": 0.21401619580214576,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "TATASTEEL": {
+        "validation": {
+          "net_pnl": -4238.527772792382,
+          "return_pct": -0.4238527772792433,
+          "max_drawdown_pct": 0.7340567890137548,
+          "trades": 7,
+          "win_rate_pct": 14.285714285714285,
+          "profit_factor": 0.3347444397768901,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "TCS": {
+        "validation": {
+          "net_pnl": -2255.444042081479,
+          "return_pct": -0.22554440420814448,
+          "max_drawdown_pct": 0.2500265752245481,
+          "trades": 8,
+          "win_rate_pct": 50.0,
+          "profit_factor": 0.20835626851155448,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      }
+    },
+    "breakout": {
+      "IDEA": {
+        "validation": {
+          "net_pnl": 1447.7961201254511,
+          "return_pct": 0.14477961201253553,
+          "max_drawdown_pct": 0.47417618995094435,
+          "trades": 12,
+          "win_rate_pct": 41.66666666666667,
+          "profit_factor": 1.27588526898544,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "RELIANCE": {
+        "validation": {
+          "net_pnl": -59.489865062059835,
+          "return_pct": -0.005948986506210119,
+          "max_drawdown_pct": 0.09209344750275386,
+          "trades": 3,
+          "win_rate_pct": 66.66666666666666,
+          "profit_factor": 0.8280260096004536,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "SBIN": {
+        "validation": {
+          "net_pnl": -389.9844722636044,
+          "return_pct": -0.03899844722635715,
+          "max_drawdown_pct": 0.2616054998760871,
+          "trades": 6,
+          "win_rate_pct": 50.0,
+          "profit_factor": 0.8347325215210183,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "SUNPHARMA": {
+        "validation": {
+          "net_pnl": -3443.5084053075407,
+          "return_pct": -0.3443508405307494,
+          "max_drawdown_pct": 0.3910274259329308,
+          "trades": 5,
+          "win_rate_pct": 0.0,
+          "profit_factor": 0.0,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "TATASTEEL": {
+        "validation": {
+          "net_pnl": -1545.415714683826,
+          "return_pct": -0.15454157146838066,
+          "max_drawdown_pct": 0.22835812175835019,
+          "trades": 3,
+          "win_rate_pct": 0.0,
+          "profit_factor": 0.0,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "TCS": {
+        "validation": {
+          "net_pnl": -3169.7499373648316,
+          "return_pct": -0.3169749937364852,
+          "max_drawdown_pct": 0.3414444583584065,
+          "trades": 7,
+          "win_rate_pct": 42.857142857142854,
+          "profit_factor": 0.01194291828800101,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      }
+    },
+    "opening_range": {
+      "IDEA": {
+        "validation": {
+          "net_pnl": 0.0,
+          "return_pct": 0.0,
+          "max_drawdown_pct": 0.0,
+          "trades": 0,
+          "win_rate_pct": 0,
+          "profit_factor": null,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "RELIANCE": {
+        "validation": {
+          "net_pnl": 776.9891594465589,
+          "return_pct": 0.07769891594464617,
+          "max_drawdown_pct": 0.08580395693028475,
+          "trades": 3,
+          "win_rate_pct": 66.66666666666666,
+          "profit_factor": 6.442942375339069,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "SBIN": {
+        "validation": {
+          "net_pnl": -939.2433699679095,
+          "return_pct": -0.09392433699678682,
+          "max_drawdown_pct": 0.2105891044973866,
+          "trades": 3,
+          "win_rate_pct": 66.66666666666666,
+          "profit_factor": 0.44280044051995443,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "SUNPHARMA": {
+        "validation": {
+          "net_pnl": -150.02210221148562,
+          "return_pct": -0.015002210221148893,
+          "max_drawdown_pct": 0.061678795623325275,
+          "trades": 1,
+          "win_rate_pct": 0.0,
+          "profit_factor": 0.0,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "TATASTEEL": {
+        "validation": {
+          "net_pnl": -3344.5193959486205,
+          "return_pct": -0.33445193959485975,
+          "max_drawdown_pct": 0.5480072972721769,
+          "trades": 5,
+          "win_rate_pct": 20.0,
+          "profit_factor": 0.3896943685610168,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "TCS": {
+        "validation": {
+          "net_pnl": -1025.5515359512065,
+          "return_pct": -0.10255515359511858,
+          "max_drawdown_pct": 0.2334065035377273,
+          "trades": 2,
+          "win_rate_pct": 50.0,
+          "profit_factor": 0.39208787954141205,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      }
+    },
+    "pullback": {
+      "IDEA": {
+        "validation": {
+          "net_pnl": 0.0,
+          "return_pct": 0.0,
+          "max_drawdown_pct": 0.0,
+          "trades": 0,
+          "win_rate_pct": 0,
+          "profit_factor": null,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        },
+        "test": {
+          "net_pnl": 0.0,
+          "return_pct": 0.0,
+          "max_drawdown_pct": 0.0,
+          "trades": 0,
+          "win_rate_pct": 0,
+          "profit_factor": null,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        },
+        "stress_test": {
+          "net_pnl": 0.0,
+          "return_pct": 0.0,
+          "max_drawdown_pct": 0.0,
+          "trades": 0,
+          "win_rate_pct": 0,
+          "profit_factor": null,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 2
+        }
+      },
+      "RELIANCE": {
+        "validation": {
+          "net_pnl": 4.681470784242265,
+          "return_pct": 0.00046814707841402736,
+          "max_drawdown_pct": 0.09135997617018875,
+          "trades": 5,
+          "win_rate_pct": 40.0,
+          "profit_factor": 1.005271027351928,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        },
+        "test": {
+          "net_pnl": -2960.5458031701855,
+          "return_pct": -0.2960545803170178,
+          "max_drawdown_pct": 0.30651708546149314,
+          "trades": 3,
+          "win_rate_pct": 0.0,
+          "profit_factor": 0.0,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        },
+        "stress_test": {
+          "net_pnl": -3229.839201933006,
+          "return_pct": -0.32298392019329825,
+          "max_drawdown_pct": 0.3289637248994433,
+          "trades": 3,
+          "win_rate_pct": 0.0,
+          "profit_factor": 0.0,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 2
+        }
+      },
+      "SBIN": {
+        "validation": {
+          "net_pnl": 1409.2125683063641,
+          "return_pct": 0.1409212568306284,
+          "max_drawdown_pct": 0.10092268285472811,
+          "trades": 8,
+          "win_rate_pct": 50.0,
+          "profit_factor": 2.3155513029272106,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        },
+        "test": {
+          "net_pnl": 800.4105695665348,
+          "return_pct": 0.08004105695664787,
+          "max_drawdown_pct": 0.2143986428807208,
+          "trades": 7,
+          "win_rate_pct": 57.14285714285714,
+          "profit_factor": 1.4121127117040444,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        },
+        "stress_test": {
+          "net_pnl": 172.11240277264733,
+          "return_pct": 0.017211240277270612,
+          "max_drawdown_pct": 0.23241369744142867,
+          "trades": 7,
+          "win_rate_pct": 57.14285714285714,
+          "profit_factor": 1.0778115495612295,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 2
+        }
+      },
+      "SUNPHARMA": {
+        "validation": {
+          "net_pnl": 575.5031030694954,
+          "return_pct": 0.05755031030694191,
+          "max_drawdown_pct": 0.17552805402298133,
+          "trades": 5,
+          "win_rate_pct": 60.0,
+          "profit_factor": 1.8702023455976493,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        },
+        "test": {
+          "net_pnl": 435.48884666291997,
+          "return_pct": 0.043548884666289034,
+          "max_drawdown_pct": 0.17772956054932645,
+          "trades": 4,
+          "win_rate_pct": 50.0,
+          "profit_factor": 1.6684540739284388,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        },
+        "stress_test": {
+          "net_pnl": 77.8426352578681,
+          "return_pct": 0.0077842635257896475,
+          "max_drawdown_pct": 0.18669130080021895,
+          "trades": 4,
+          "win_rate_pct": 50.0,
+          "profit_factor": 1.0937636510730793,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 2
+        }
+      },
+      "TATASTEEL": {
+        "validation": {
+          "net_pnl": -1869.7378042723285,
+          "return_pct": -0.18697378042723534,
+          "max_drawdown_pct": 0.22353126405656323,
+          "trades": 2,
+          "win_rate_pct": 0.0,
+          "profit_factor": 0.0,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        },
+        "test": {
+          "net_pnl": 2472.490501440596,
+          "return_pct": 0.2472490501440605,
+          "max_drawdown_pct": 0.3534110817832561,
+          "trades": 7,
+          "win_rate_pct": 57.14285714285714,
+          "profit_factor": 1.7101327543755702,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        },
+        "stress_test": {
+          "net_pnl": 1890.2948774649994,
+          "return_pct": 0.18902948774650596,
+          "max_drawdown_pct": 0.3824855688499977,
+          "trades": 7,
+          "win_rate_pct": 42.857142857142854,
+          "profit_factor": 1.5005135600420607,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 2
+        }
+      },
+      "TCS": {
+        "validation": {
+          "net_pnl": -646.3041491709882,
+          "return_pct": -0.06463041491709953,
+          "max_drawdown_pct": 0.1898045481630223,
+          "trades": 6,
+          "win_rate_pct": 50.0,
+          "profit_factor": 0.4940152361556618,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        },
+        "test": {
+          "net_pnl": 258.0514016915113,
+          "return_pct": 0.025805140169143925,
+          "max_drawdown_pct": 0.03251762882469378,
+          "trades": 2,
+          "win_rate_pct": 50.0,
+          "profit_factor": 2.732261734377035,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        },
+        "stress_test": {
+          "net_pnl": 79.73899189895019,
+          "return_pct": 0.007973899189894773,
+          "max_drawdown_pct": 0.04144296822695935,
+          "trades": 2,
+          "win_rate_pct": 50.0,
+          "profit_factor": 1.334047161834926,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 2
+        }
+      }
+    },
+    "range_reversion": {
+      "IDEA": {
+        "validation": {
+          "net_pnl": 0.0,
+          "return_pct": 0.0,
+          "max_drawdown_pct": 0.0,
+          "trades": 0,
+          "win_rate_pct": 0,
+          "profit_factor": null,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "RELIANCE": {
+        "validation": {
+          "net_pnl": -4660.143885890138,
+          "return_pct": -0.4660143885890089,
+          "max_drawdown_pct": 0.67217529362431,
+          "trades": 12,
+          "win_rate_pct": 33.33333333333333,
+          "profit_factor": 0.2584880313952351,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "SBIN": {
+        "validation": {
+          "net_pnl": -2165.349199167802,
+          "return_pct": -0.21653491991677765,
+          "max_drawdown_pct": 0.24228202750230374,
+          "trades": 7,
+          "win_rate_pct": 28.57142857142857,
+          "profit_factor": 0.22435532355924975,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "SUNPHARMA": {
+        "validation": {
+          "net_pnl": 1238.895137704676,
+          "return_pct": 0.12388951377046986,
+          "max_drawdown_pct": 0.1084823842278407,
+          "trades": 4,
+          "win_rate_pct": 75.0,
+          "profit_factor": 10.15108999475712,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "TATASTEEL": {
+        "validation": {
+          "net_pnl": 243.07292060903274,
+          "return_pct": 0.02430729206090998,
+          "max_drawdown_pct": 0.3006743141829239,
+          "trades": 11,
+          "win_rate_pct": 63.63636363636363,
+          "profit_factor": 1.0751202521711103,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "TCS": {
+        "validation": {
+          "net_pnl": -1923.1901857326739,
+          "return_pct": -0.1923190185732726,
+          "max_drawdown_pct": 0.24188966194129197,
+          "trades": 6,
+          "win_rate_pct": 33.33333333333333,
+          "profit_factor": 0.2788032551109852,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      }
+    },
+    "adaptive_alpha": {
+      "IDEA": {
+        "validation": {
+          "net_pnl": 0.0,
+          "return_pct": 0.0,
+          "max_drawdown_pct": 0.0,
+          "trades": 0,
+          "win_rate_pct": 0,
+          "profit_factor": null,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "RELIANCE": {
+        "validation": {
+          "net_pnl": -480.8157378301257,
+          "return_pct": -0.04808157378300981,
+          "max_drawdown_pct": 0.31537057908043997,
+          "trades": 17,
+          "win_rate_pct": 47.05882352941176,
+          "profit_factor": 0.8696036344681927,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "SBIN": {
+        "validation": {
+          "net_pnl": 208.16901144443545,
+          "return_pct": 0.020816901144438127,
+          "max_drawdown_pct": 0.3765996949934349,
+          "trades": 23,
+          "win_rate_pct": 34.78260869565217,
+          "profit_factor": 1.0373810326175283,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "SUNPHARMA": {
+        "validation": {
+          "net_pnl": -3748.384480867302,
+          "return_pct": -0.37483844808673394,
+          "max_drawdown_pct": 0.5065503295287938,
+          "trades": 19,
+          "win_rate_pct": 42.10526315789473,
+          "profit_factor": 0.3908573550316013,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "TATASTEEL": {
+        "validation": {
+          "net_pnl": -3661.3439773204736,
+          "return_pct": -0.36613439773204304,
+          "max_drawdown_pct": 0.4514227834647871,
+          "trades": 16,
+          "win_rate_pct": 43.75,
+          "profit_factor": 0.4114757872228872,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      },
+      "TCS": {
+        "validation": {
+          "net_pnl": -4232.6518017594935,
+          "return_pct": -0.42326518017594683,
+          "max_drawdown_pct": 0.5602890228808813,
+          "trades": 18,
+          "win_rate_pct": 33.33333333333333,
+          "profit_factor": 0.45104088384578406,
+          "cost_model": "configured taxes + estimated Rs20/order + GST18% + slippage; no measured spread/impact/latency",
+          "slippage_multiplier": 1
+        }
+      }
+    }
+  },
+  "selected_candidate": "observe",
+  "approved_for_use": false,
+  "candidate_count": 6,
+  "data_start": "2026-06-08",
+  "data_end": "2026-10-05",
+  "best_validation_candidate": "pullback",
+  "passes_exploratory_checks": false,
+  "deployment_decision": "No candidate passed; observe only",
+  "limitations": "Selection is exploratory, not proof of optimality. Requires broader history, full broker costs and forward paper validation."
+}

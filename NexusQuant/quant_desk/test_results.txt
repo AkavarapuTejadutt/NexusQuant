@@ -1,0 +1,44 @@
+[PaperBroker] ENTRY LONG: 100 SBIN @ Rs. 500.15 (Slippage: Rs. 15.00, Risk: Rs. 150.00)
+[PaperBroker] CLOSED LONG SBIN: Net PnL +Rs. 1,951.74 (Reason: TARGET)
+[PaperBroker] ENTRY LONG: 10 TCS @ Rs. 2000.60 (Slippage: Rs. 6.00, Risk: Rs. 15.00)
+[PaperBroker] ENTRY LONG: 10 SBIN @ Rs. 500.15 (Slippage: Rs. 1.50, Risk: Rs. 15.00)
+[PaperBroker] ENTRY LONG: 1 SBIN @ Rs. 500.15 (Slippage: Rs. 0.15, Risk: Rs. 1.50)
+[PaperBroker] ENTRY LONG: 100 SBIN @ Rs. 500.15 (Slippage: Rs. 15.00, Risk: Rs. 150.00)
+[PaperBroker] PARTIAL CLOSE 40 LONG SBIN: Net PnL +Rs. 780.70 (Reason: PARTIAL_TP, Left: 60)
+[PaperBroker] CLOSED LONG SBIN: Net PnL +Rs. 1,171.04 (Reason: SIGNAL)
+[PaperBroker] ENTRY SHORT: 100 SBIN @ Rs. 499.85 (Slippage: Rs. 15.00, Risk: Rs. 150.00)
+[PaperBroker] PARTIAL CLOSE 40 SHORT SBIN: Net PnL +Rs. 781.45 (Reason: PARTIAL_TP, Left: 60)
+[PaperBroker] CLOSED SHORT SBIN: Net PnL +Rs. 1,172.18 (Reason: SIGNAL)
+[RiskEngine] New Session Initialized. Baseline Capital: Rs. 1,000,000.00
+[PaperBroker] ENTRY LONG: 300 SBIN @ Rs. 500.15 (Slippage: Rs. 45.00, Risk: Rs. 1845.00)
+[DataFeed] Connecting to FYERS for historical 1-min playback...
+[DataFeed] Replay history 1/1: SBIN
+[DataFeed] Replaying 2 minute timestamps across 1 stocks; processing time is additional to playback delay.
+[DataFeed] Simulation playback completed.
+[DataFeed] Connecting to FYERS for historical 1-min playback...
+[DataFeed] Replay history 1/1: SBIN
+[DataFeed] No replay candles for SBIN (status: ok)
+[DataFeed] No historical data found. Halting simulation.
+[DataFeed] Connecting to FYERS for historical 1-min playback...
+[DataFeed] Replay history 1/1: SBIN
+----------------------------------------------------------------------
+Ran 44 tests in 2.756s
+
+OK
+[DataFeed] Replaying 1 minute timestamps across 1 stocks; processing time is additional to playback delay.
+[RiskEngine] New Session Initialized. Baseline Capital: Rs. 1,000,000.00
+[PaperBroker] ENTRY LONG: 300 SBIN @ Rs. 500.15 (Slippage: Rs. 45.00, Risk: Rs. 1845.00)
+[PaperBroker] CLOSED LONG SBIN: Net PnL -Rs. 3,139.55 (Reason: STOP_LOSS)
+[RiskEngine] New Session Initialized. Baseline Capital: Rs. 1,000,000.00
+[RiskEngine] New Session Initialized. Baseline Capital: Rs. 970,000.00
+[PaperBroker] ENTRY LONG: 10 SBIN @ Rs. 500.15 (Slippage: Rs. 1.50, Risk: Rs. 15.00)
+[RiskEngine] New Session Initialized. Baseline Capital: Rs. 1,000,008.19
+[PaperBroker] CLOSED LONG SBIN: Net PnL +Rs. 5.28 (Reason: END_OF_DAY)
+[PaperBroker] ENTRY LONG: 10 TCS @ Rs. 2000.60 (Slippage: Rs. 6.00, Risk: Rs. 15.00)
+[PaperBroker] ENTRY LONG: 16 SBIN @ Rs. 500.15 (Slippage: Rs. 2.40, Risk: Rs. 98.40)
+[PaperBroker] ENTRY LONG: 10 SBIN @ Rs. 500.15 (Slippage: Rs. 1.50, Risk: Rs. 51.50)
+[RiskEngine] New Session Initialized. Baseline Capital: Rs. 999,898.19
+[PaperBroker] CLOSED LONG SBIN: Net PnL -Rs. 104.65 (Reason: STOP_LOSS)
+[PaperBroker] ENTRY LONG: 9 SBIN @ Rs. 100.03 (Slippage: Rs. 0.27, Risk: Rs. 13.50)
+[PaperBroker] CLOSED LONG SBIN: Net PnL -Rs. 48.06 (Reason: SIGNAL)
+[RiskEngine] New Session Initialized. Baseline Capital: Rs. 1,000,000.00

@@ -1,0 +1,411 @@
+{
+  "source": "https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_07102026.csv",
+  "as_of": "2026-10-07 15:30:00",
+  "session_date": "2026-10-07",
+  "coverage": "NSE EQ equities in current NSE equity master; ETFs/SME/other series excluded",
+  "global_ranking": true,
+  "universe_size": 2328,
+  "stocks": [
+    {
+      "rank": 1,
+      "symbol": "MONEYVIEW",
+      "volume": 424471169,
+      "ltp": 60.46,
+      "change_pct": 19.72277227722772,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 2,
+      "symbol": "IDEA",
+      "volume": 377013597,
+      "ltp": 13.18,
+      "change_pct": -0.2271006813020504,
+      "sector": "TELECOM"
+    },
+    {
+      "rank": 3,
+      "symbol": "PCJEWELLER",
+      "volume": 208486730,
+      "ltp": 13.14,
+      "change_pct": 1.6241299303944468,
+      "sector": "CONSUMER"
+    },
+    {
+      "rank": 4,
+      "symbol": "MOBIKWIK",
+      "volume": 74766600,
+      "ltp": 256.08,
+      "change_pct": 5.757000082596853,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 5,
+      "symbol": "YESBANK",
+      "volume": 73908969,
+      "ltp": 20.79,
+      "change_pct": -0.3355704697986628,
+      "sector": "BANK"
+    },
+    {
+      "rank": 6,
+      "symbol": "SUZLON",
+      "volume": 73531474,
+      "ltp": 38.34,
+      "change_pct": -2.093973442288033,
+      "sector": "CAPITAL_GOODS"
+    },
+    {
+      "rank": 7,
+      "symbol": "ACEVECTOR",
+      "volume": 66714951,
+      "ltp": 31.11,
+      "change_pct": 19.976860779020434,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 8,
+      "symbol": "ALOKINDS",
+      "volume": 63108260,
+      "ltp": 8.29,
+      "change_pct": 5.874840357598976,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 9,
+      "symbol": "OLAELEC",
+      "volume": 61427676,
+      "ltp": 36.32,
+      "change_pct": 1.0011123470522687,
+      "sector": "AUTO"
+    },
+    {
+      "rank": 10,
+      "symbol": "BLUECLOUDS",
+      "volume": 58789235,
+      "ltp": 20.35,
+      "change_pct": 1.69915042478761,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 11,
+      "symbol": "ITC",
+      "volume": 50025295,
+      "ltp": 265.7,
+      "change_pct": -0.37495313085864623,
+      "sector": "FMCG"
+    },
+    {
+      "rank": 12,
+      "symbol": "JPPOWER",
+      "volume": 44222342,
+      "ltp": 14.86,
+      "change_pct": -0.9333333333333416,
+      "sector": "POWER"
+    },
+    {
+      "rank": 13,
+      "symbol": "GROWW",
+      "volume": 42404060,
+      "ltp": 197.75,
+      "change_pct": 2.360370619597285,
+      "sector": "FINANCE"
+    },
+    {
+      "rank": 14,
+      "symbol": "CUPID",
+      "volume": 41373811,
+      "ltp": 343.95,
+      "change_pct": 6.091918568784704,
+      "sector": "FMCG"
+    },
+    {
+      "rank": 15,
+      "symbol": "PINELABS",
+      "volume": 40833328,
+      "ltp": 177.67,
+      "change_pct": 2.8599548428182686,
+      "sector": "FINANCE"
+    },
+    {
+      "rank": 16,
+      "symbol": "SYNCOMF",
+      "volume": 40584346,
+      "ltp": 24.94,
+      "change_pct": 7.407407407407418,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 17,
+      "symbol": "HEROMOTORS",
+      "volume": 39347591,
+      "ltp": 170.84,
+      "change_pct": 1.9818529130849916,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 18,
+      "symbol": "KOTAKBANK",
+      "volume": 37972097,
+      "ltp": 440.0,
+      "change_pct": 1.8754341282704479,
+      "sector": "BANK"
+    },
+    {
+      "rank": 19,
+      "symbol": "VISL",
+      "volume": 35144526,
+      "ltp": 29.44,
+      "change_pct": -4.260162601626016,
+      "sector": "METALS"
+    },
+    {
+      "rank": 20,
+      "symbol": "PWL",
+      "volume": 34917953,
+      "ltp": 139.57,
+      "change_pct": 5.84711057181857,
+      "sector": "SERVICES"
+    },
+    {
+      "rank": 21,
+      "symbol": "HDFCBANK",
+      "volume": 29944008,
+      "ltp": 702.75,
+      "change_pct": -1.2228547332911677,
+      "sector": "BANK"
+    },
+    {
+      "rank": 22,
+      "symbol": "FCL",
+      "volume": 29767531,
+      "ltp": 57.8,
+      "change_pct": -2.3648648648648796,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 23,
+      "symbol": "EMPOWER",
+      "volume": 27855807,
+      "ltp": 1.76,
+      "change_pct": 4.761904761904767,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 24,
+      "symbol": "EASEMYTRIP",
+      "volume": 27006843,
+      "ltp": 5.86,
+      "change_pct": 1.0344827586207028,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 25,
+      "symbol": "JISLJALEQS",
+      "volume": 26460467,
+      "ltp": 27.95,
+      "change_pct": 4.878048780487809,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 26,
+      "symbol": "ETERNAL",
+      "volume": 23804457,
+      "ltp": 328.0,
+      "change_pct": -0.3039513677811523,
+      "sector": "SERVICES"
+    },
+    {
+      "rank": 27,
+      "symbol": "MRPL",
+      "volume": 23675207,
+      "ltp": 182.86,
+      "change_pct": 4.658882783882801,
+      "sector": "ENERGY"
+    },
+    {
+      "rank": 28,
+      "symbol": "GTLINFRA",
+      "volume": 23200615,
+      "ltp": 1.07,
+      "change_pct": -1.834862385321101,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 29,
+      "symbol": "IBULLSLTD",
+      "volume": 22176156,
+      "ltp": 32.49,
+      "change_pct": 4.975767366720518,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 30,
+      "symbol": "STEAMHOUSE",
+      "volume": 22137870,
+      "ltp": 125.17,
+      "change_pct": 5.700050667117051,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 31,
+      "symbol": "UTKARSHBNK",
+      "volume": 21411872,
+      "ltp": 13.98,
+      "change_pct": 3.4023668639053373,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 32,
+      "symbol": "DEEPA",
+      "volume": 21380382,
+      "ltp": 227.06,
+      "change_pct": 6.082975144832736,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 33,
+      "symbol": "IFCI",
+      "volume": 21013703,
+      "ltp": 64.03,
+      "change_pct": -2.2591970691497543,
+      "sector": "FINANCE"
+    },
+    {
+      "rank": 34,
+      "symbol": "MAHABANK",
+      "volume": 20883267,
+      "ltp": 84.15,
+      "change_pct": 4.146039603960405,
+      "sector": "FINANCE"
+    },
+    {
+      "rank": 35,
+      "symbol": "IDFCFIRSTB",
+      "volume": 20250870,
+      "ltp": 79.54,
+      "change_pct": -2.476704266797447,
+      "sector": "BANK"
+    },
+    {
+      "rank": 36,
+      "symbol": "CHENNPETRO",
+      "volume": 20027812,
+      "ltp": 1612.3,
+      "change_pct": 14.697303834388563,
+      "sector": "ENERGY"
+    },
+    {
+      "rank": 37,
+      "symbol": "RPOWER",
+      "volume": 20012310,
+      "ltp": 20.32,
+      "change_pct": -0.8296730112249739,
+      "sector": "POWER"
+    },
+    {
+      "rank": 38,
+      "symbol": "MOREPENLAB",
+      "volume": 19889954,
+      "ltp": 146.97,
+      "change_pct": 2.0908585718254935,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 39,
+      "symbol": "TFCILTD",
+      "volume": 19824302,
+      "ltp": 152.24,
+      "change_pct": 8.24031283327409,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 40,
+      "symbol": "MARSONS",
+      "volume": 19136401,
+      "ltp": 132.45,
+      "change_pct": 11.078497148607847,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 41,
+      "symbol": "BAJAJHIND",
+      "volume": 19089108,
+      "ltp": 21.05,
+      "change_pct": -1.312705110173451,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 42,
+      "symbol": "TATASTEEL",
+      "volume": 18846203,
+      "ltp": 175.64,
+      "change_pct": -1.706866640550686,
+      "sector": "METALS"
+    },
+    {
+      "rank": 43,
+      "symbol": "ADANIPOWER",
+      "volume": 18844725,
+      "ltp": 196.94,
+      "change_pct": -2.697628458498025,
+      "sector": "POWER"
+    },
+    {
+      "rank": 44,
+      "symbol": "KALYANKJIL",
+      "volume": 18559247,
+      "ltp": 569.0,
+      "change_pct": 3.803703365867017,
+      "sector": "CONSUMER"
+    },
+    {
+      "rank": 45,
+      "symbol": "KANOHAR",
+      "volume": 18502805,
+      "ltp": 1091.05,
+      "change_pct": 15.761273209549076,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 46,
+      "symbol": "RENTOMOJO",
+      "volume": 18424264,
+      "ltp": 618.95,
+      "change_pct": 13.527146001467361,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 47,
+      "symbol": "PNB",
+      "volume": 18275898,
+      "ltp": 114.59,
+      "change_pct": 2.3856325947105184,
+      "sector": "BANK"
+    },
+    {
+      "rank": 48,
+      "symbol": "DHANBANK",
+      "volume": 18177967,
+      "ltp": 32.83,
+      "change_pct": 13.874436351023235,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 49,
+      "symbol": "MANIKA",
+      "volume": 18085851,
+      "ltp": 58.64,
+      "change_pct": 13.819875776397517,
+      "sector": "UNCLASSIFIED"
+    },
+    {
+      "rank": 50,
+      "symbol": "CANBK",
+      "volume": 17756429,
+      "ltp": 119.15,
+      "change_pct": 1.128840604311665,
+      "sector": "BANK"
+    }
+  ],
+  "warnings": []
+}

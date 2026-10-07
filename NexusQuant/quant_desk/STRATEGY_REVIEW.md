@@ -1,0 +1,118 @@
+# Strategy review and candidate evaluation
+
+Update, 6 October 2026: historical data is now available and the expanded
+five-candidate study has completed. See [RESEARCH_RESULTS.md](RESEARCH_RESULTS.md)
+for current results, cost assumptions, rejection decision and website commands.
+The earlier unavailable-data description below records the first evaluation attempt.
+
+The previous implementation had execution and validation defects. Losing trades
+alone do not establish whether a strategy has a positive or negative expectancy.
+No strategy in this workspace has demonstrated out-of-sample profitability.
+
+## Findings and changes
+
+| Finding | Change |
+| --- | --- |
+| Unfinished candles triggered repeated decisions on every tick | Entries now use completed 5-minute and 15-minute candles, once per 5-minute bar |
+| A stopped trade could immediately re-enter from the same signal | Signals are consumed once, with a three-bar cooldown after entry or exit |
+| ADX indicated strength without confirming higher-timeframe direction | Entries require 15-minute EMA direction agreement |
+| The volume average included the trigger candle | Compare against the preceding 20 candles |
+| Random initial RL weights and exploration affected entry admission | RL gate disabled by default; optional gate evaluates the proposed action deterministically after a training threshold |
+| Later decisions overwrote the action rewarded for a position | Rewards now retain the state and action recorded when the entry executes |
+| The portfolio risk check did not include the incoming trade | Quantity is capped by remaining combined stop-risk budget, including entry slippage |
+| Sizing used a minimum 1% stop while execution could use a tighter stop | Executed stop and quantity calculations now use the same distance |
+| Trailing stop tightened from the outset | Trailing begins after partial profit taking; protective stops remain active on every tick |
+| Indicator errors could prevent stop processing | Existing momentum stops are checked before evaluating indicators |
+| No end-of-day exit or daily-baseline rollover | Entries 09:30–15:00 IST; exit at 15:20; daily limits use a reset session baseline |
+| Pair strategies admitted divergence beyond their own hard stop | Block those entries; require both cointegration tests and valid calibration samples |
+| Pair sizing and constraints considered mainly leg A | Size the two-leg basket, check fees/cash, sector availability, position cap, fresh paired quotes, and stop risk |
+| Daily-calibrated pair models lack an intraday performance study | Original pairs retained and enabled; require calibration, basket controls, and further paper validation |
+
+The live timer exits the virtual ledger using the last available quotes if no tick
+arrives at the cutoff. This is a paper-account valuation, not a verified exchange
+fill. Weekends are blocked; an exchange holiday calendar is not implemented.
+
+## Paper candidate now enabled
+
+The deterministic **trend-confirmation candidate** retains the existing 5-minute
+EMA 6/30 trend logic, volume spike of at least 1.5 times the preceding 20-bar
+average, completed 15-minute ADX above 25, and session VWAP direction. It adds
+15-minute EMA direction agreement and the execution controls described above.
+
+Candidate risk defaults are 0.25% equity per trade (₹2,500 at ₹10 lakh equity),
+0.75% combined open stop risk, at most three positions, one per sector, and 15%
+of equity per symbol. The existing daily loss circuit breaker remains 2%.
+These are chosen engineering defaults, not empirically optimized parameters.
+Gaps, friction and stale quotes can make realized losses exceed modeled stop risk.
+
+Initial stop distance is max(1.5×ATR, 1% of entry market price). Stage-one target
+distance is max(2.5×ATR, 1.5×initial stop distance). Half of the shares are closed
+at stage one and the rest trails; a one-share position closes fully at target.
+Entries require projected target distance to clear the configured friction gate.
+
+The second research candidate uses the same regime, VWAP, risk, and exit rules,
+but requires a breakout of the previous 20 completed bars instead of the trend
+trigger. No candidate is labeled optimal or proven profitable.
+Set `MOMENTUM_ENTRY_STYLE=breakout` in `.env` to select that candidate for paper
+execution after reviewing its results; the default is `trend`.
+
+The original pair strategy is enabled by default, respecting your request to
+retain your strategies; `ENABLE_STAT_ARB=false` disables it. The original pairs
+remain, with same-sector candidates drawn from the NSE selection at startup.
+`ENABLE_RL_FILTER=true` opts into the retained experimental RL filter.
+The RL training-step threshold is an operational gate, not evidence of
+calibrated confidence or predictive skill. Its sigmoid output is not a measured
+probability of winning. RL learning is not persisted across restarts.
+
+## Historical evaluation
+
+The attempt in this workspace produced `strategy_report.json` with status
+`unavailable`, because no FYERS access token was available. No market-data
+performance figures have been generated or substituted with synthetic returns.
+
+Authenticate and compare candidates:
+
+```powershell
+python quant_desk/main.py --auth
+python -m quant_desk.evaluate_strategies --download --days 90 --symbols SBIN RELIANCE TCS
+```
+
+Or supply 5-minute CSVs with columns `datetime,open,high,low,close,volume` and IST
+candle-start timestamps:
+
+```powershell
+python -m quant_desk.evaluate_strategies --data-dir C:/path/to/candles
+```
+
+FYERS provides historical OHLCV through its
+[History API](https://support.fyers.in/portal/en/kb/articles/how-can-i-get-historical-data-for-a-symbol-over-a-specific-date-range-using-the-history-api).
+The downloader excludes the current day and requests data in 30-day chunks.
+
+The evaluator uses chronological session boundaries: first 60% for indicator
+history, next 20% for candidate selection, final 20% for held-out evaluation.
+Selection uses validation results only. Signals fill on the next available
+five-minute bar's open and cannot cross a gap or an overnight boundary.
+Stops get precedence when an OHLC bar touches both stop and target, and gap
+stops fill at the adverse open. Partial exits and end-of-day closure use the
+same broker ledger. Future candles are excluded from indicators.
+
+It reports net return, drawdown, trade count, win rate, and profit factor. Its
+exploratory acceptance flag requires at least ten closed trades, positive P&L,
+profit factor above one, and drawdown at most 2% in both validation and test
+for each symbol. A flag is not a deployment authorization or proof of optimality.
+No settings are automatically changed from research results.
+
+Limitations: independent symbol accounts are not a combined portfolio backtest;
+brokerage, GST, bid/ask spread, latency and intrabar paths are not fully modeled;
+the daily kill switch is evaluated at bar close in research; the live entry
+condition fills at the first following tick, while research uses the next open.
+Sparse five-minute bars and survivorship/universe selection can distort results.
+More history, full actual broker costs, and forward paper results are needed
+before making a performance-based strategy choice.
+
+## Verification
+
+The unit suite covers completed-candle gating, same-bar re-entry prevention,
+intrabar stops, proposed-trade risk, daily reset, end-of-day exits, RL entry-state
+tracking, and exclusion of future candles from research, in addition to the
+previous feed/ledger tests. These verify implementation behavior, not profitability.
